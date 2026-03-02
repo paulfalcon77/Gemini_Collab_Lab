@@ -73,3 +73,7 @@ export function trenMap(arr: number[]): number[] {
     return arr.map(n => n * 2)
 }
    console.log(trenMap([1,2,3,4]))
+
+export function doubleChar(str: string): string {
+    return str.split('').map(n => n + n).join('')
+}console.log(doubleChar("Pavel"))
