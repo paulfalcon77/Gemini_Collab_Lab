@@ -61,3 +61,21 @@ export function findAverage(array: number[]): number {
     }
     return sum/array.length
 }console.log(findAverage([2, 2, 2]))
+
+//Task 6
+export function findNeedle(haystack: any[]): string {
+    const index = haystack.indexOf("needle")
+    return `found the needle at position ${index}`;
+} console.log(findNeedle(["hay", "junk", "needle"]))
+
+//Task 7
+export function getCount(str: string): number {
+    const vowels = "aeiou"
+    let count = 0
+    for (let i = 0; i < str.length; i++) {
+        if(vowels.includes(str[i]))
+        {
+            count ++
+        }
+    } return count
+}console.log(getCount("dfdgghhjjeed"))
