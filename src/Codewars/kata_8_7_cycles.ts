@@ -79,3 +79,29 @@ export function getCount(str: string): number {
         }
     } return count
 }console.log(getCount("dfdgghhjjeed"))
+
+// "Convert a Number to a String!"
+export function numberToString(num: number): string {
+    return num.toString()
+}console.log(numberToString(123))
+
+//"Descending Order"
+
+export function descendingOrder(n: number): number {
+    let count = n.toString()
+    let res =  count.split('')
+    let result = res.sort().reverse().join("")
+    let end = Number(result)
+    return end
+}console.log(descendingOrder(35568924))
+
+//a square
+
+export function isSquare(n: number): boolean {
+    let res = Math.sqrt(n)
+    let result = Number.isInteger(res)
+    if(result) {
+        return true
+    }
+
+} console.log(isSquare(5))
